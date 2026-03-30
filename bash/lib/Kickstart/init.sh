@@ -1,11 +1,18 @@
 . lib/Kickstart/depends.sh
 
 # Init Kickstart
-clone_and_firstrun(){
-	git clone --depth=1 https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
-	bash
+clone(){
+	if [ ! -d ~/.config/nvim/lua/kickstart ];then
+		git clone --depth=1 https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+	fi
+}
+
+firstrun(){
+	cd ~
+	#bash nvim
 }
 
 init_kickstart(){
-	clone_and_firstrun
+	clone
+	firstrun
 }
