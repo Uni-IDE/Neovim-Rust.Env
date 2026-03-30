@@ -1,0 +1,3 @@
+. lib/var
+
+. lib/clean.sh

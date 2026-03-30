@@ -1,0 +1,4 @@
+type=kickstart #nvchad
+
+external_drive=shuttle
+bac=/mnt/chromeos/removable/$external_drive/Dev/bac
