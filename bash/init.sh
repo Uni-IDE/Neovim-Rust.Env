@@ -3,8 +3,9 @@
 clean
 
 if [ $type == "Kickstart" ];then
-	echo "hello world"
+	. lib/Neovim/install.sh
 	. lib/Kickstart/init.sh
+	install_neovim
 	init_kickstart
 elif [ $type == "NvChad" ];then
 	init_nvchad
