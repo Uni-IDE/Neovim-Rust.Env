@@ -1,7 +1,5 @@
 . lib/pre
 
-clean
-
 if [ $type == "Kickstart" ];then
 	. lib/Neovim/install.sh
 	. lib/Kickstart/init.sh
