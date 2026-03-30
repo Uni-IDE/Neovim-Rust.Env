@@ -2,7 +2,7 @@
 
 # Init Kickstart
 clone(){
-	if [ ! -d ~/.config/nvim/lua/kickstart ];then
+	if [ ! -d $kconfig_dir ];then
 		git clone --depth=1 https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 	fi
 }
